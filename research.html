@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Research Roadmap | Yiming Wang</title>
+    <meta
+      name="description"
+      content="Research roadmap of Yiming Wang, showing a timeline from AIGC to embodied AI."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&family=Noto+Serif+SC:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="topbar">
+        <a class="brand" href="./index.html">Yiming Wang</a>
+        <nav class="topnav">
+          <a href="./index.html">Home</a>
+          <a href="./research.html">Research</a>
+          <a href="./index.html#publications">Publications</a>
+          <a href="./index.html#projects">Projects</a>
+        </nav>
+      </header>
+
+      <main>
+        <section class="hero research-hero">
+          <div class="hero-main">
+            <p class="hero-kicker">Research Roadmap</p>
+            <h1>Research Roadmap</h1>
+            <p class="hero-summary">
+              A compact timeline of my recent research directions, from AIGC to embodied AI. Click a node to expand details.
+            </p>
+          </div>
+          <div class="hero-note">
+            <span>Main thread</span>
+            <strong>AIGC → Embodied AI</strong>
+            <p>Current focus: VLA systems and real-world robot learning.</p>
+          </div>
+        </section>
+
+        <section id="tree" class="section">
+          <div class="section-head">
+            <h2>Timeline</h2>
+            <p>The trunk marks time, and the branches group research streams.</p>
+          </div>
+
+          <div class="rm">
+            <h3 class="rm-title">
+              <span>RESEARCH ROADMAP</span>
+              <span>&amp; AREA OVERVIEW</span>
+            </h3>
+
+            <div class="rm-canvas">
+              <svg class="rm-svg" viewBox="0 0 1000 760" preserveAspectRatio="xMidYMid meet" aria-hidden="true">
+                <line class="rm-line" x1="500" y1="55" x2="500" y2="705"/>
+                <line class="rm-line" x1="500" y1="88" x2="300" y2="245"/>
+                <line class="rm-line" x1="500" y1="374" x2="700" y2="470"/>
+              </svg>
+
+              <span class="rm-node-dot rm-node--root-start"></span>
+              <span class="rm-node-dot rm-node--root-embodied"></span>
+              <span class="rm-node-dot rm-node--aigc-start"></span>
+              <span class="rm-node-dot rm-node--embodied-start"></span>
+
+              <span class="rm-time rm-time--root-start">2024.12</span>
+              <span class="rm-time rm-time--root-embodied">2025.10</span>
+
+              <span class="rm-branch rm-branch--aigc">AIGC<br>RESEARCH STREAM</span>
+              <span class="rm-branch rm-branch--embodied">EMBODIMENT<br>RESEARCH STREAM</span>
+
+              <div class="rm-col rm-col--left">
+                <div class="rm-leaf">
+                  <button type="button" class="rm-tag">2D Controllable Generation</button>
+                  <span class="rm-leaf-line"></span>
+                  <span class="rm-leaf-dot"></span>
+                  <div class="rm-panel">
+                    <span class="rm-panel__tag">2024.12 - 2025</span>
+                    <h4>Controllable 2D Generation and Editing</h4>
+                    <p>Work on controllable image generation and editing, including conditional generation and diffusion-based methods.</p>
+                  </div>
+                </div>
+                <div class="rm-leaf">
+                  <button type="button" class="rm-tag">SVG Generation</button>
+                  <span class="rm-leaf-line"></span>
+                  <span class="rm-leaf-dot"></span>
+                  <div class="rm-panel">
+                    <span class="rm-panel__tag">2025 - 2026.01</span>
+                    <h4>SVG Generation</h4>
+                    <p>Extending generative modeling to vector graphics, with an emphasis on benchmark design and evaluation.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="rm-col rm-col--right">
+                <div class="rm-leaf">
+                  <span class="rm-leaf-dot"></span>
+                  <span class="rm-leaf-line"></span>
+                  <button type="button" class="rm-tag">VLA</button>
+                  <div class="rm-panel">
+                    <span class="rm-panel__tag">Direction · VLA</span>
+                    <h4>Vision-Language-Action</h4>
+                    <p>Connecting vision-language models with action policies for instruction-following robot systems.</p>
+                  </div>
+                </div>
+                <div class="rm-leaf">
+                  <span class="rm-leaf-dot"></span>
+                  <span class="rm-leaf-line"></span>
+                  <button type="button" class="rm-tag">Real-Robot RL</button>
+                  <div class="rm-panel">
+                    <span class="rm-panel__tag">Direction · Real-Robot RL</span>
+                    <h4>Real-World Robot Learning</h4>
+                    <p>Research and engineering around real-robot reinforcement learning, including Evo-RL, RoboClaw, and Evo-1.</p>
+                    <div class="rm-panel__projects">
+                      <a href="https://github.com/MINT-SJTU/Evo-RL" target="_blank" rel="noreferrer">Evo-RL</a>
+                      <a href="https://github.com/MINT-SJTU/RoboClaw" target="_blank" rel="noreferrer">RoboClaw</a>
+                      <a href="https://github.com/MINT-SJTU/Evo-1" target="_blank" rel="noreferrer">Evo-1</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <p class="rm-footnote">*This diagram illustrates my research progression and key projects across AIGC and Embodiment research areas.</p>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="./script.js?v=20260704"></script>
+  </body>
+</html>

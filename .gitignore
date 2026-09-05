@@ -1,0 +1,13 @@
+# Keep local notes and working files out of the public website repository.
+/*
+!/.gitignore
+!/.nojekyll
+!/index.html
+!/research.html
+!/about.html
+!/notes.html
+!/styles.css
+!/script.js
+!/github-stars.js
+!/assets/
+.DS_Store
