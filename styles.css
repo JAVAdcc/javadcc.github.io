@@ -95,6 +95,26 @@ button {
   text-align: left;
 }
 
+.intro-portrait {
+  position: relative;
+  width: 120px;
+  height: 120px;
+  margin: 0 auto 20px;
+  overflow: hidden;
+  border-radius: 50%;
+  background: var(--panel);
+}
+
+.intro-portrait img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 240%;
+  max-width: none;
+  height: auto;
+  transform: translate(-54.5%, -48%);
+}
+
 .intro h1 {
   margin: 0;
   font-family: inherit;
@@ -1046,6 +1066,12 @@ button {
   .intro {
     padding: 10px 0 34px;
     text-align: left;
+  }
+
+  .intro-portrait {
+    width: 104px;
+    height: 104px;
+    margin-left: 0;
   }
 
   .intro-links {
